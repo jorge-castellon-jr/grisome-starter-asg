@@ -23,11 +23,17 @@ module.exports = {
         concurrent: 10, // How many requests to run simultaneously (Optional)
         routes: {
           post: '/:year/:month/:day/:slug', //adds route for "post" post type (Optional)
-          post_tag: '/tag/:slug' // adds route for "post_tag" post type (Optional)
+          post_tag: '/tag/:slug', // adds route for "post_tag" post type (Optional)
         },
         createPages: {
           approach: 'include', // include or exclude, default is include
-          list: [] //an array of page slugs to include or exclude, ex. ['about', 'our-team'], default is an empty array
+          list: [
+            'about',
+            'our-mission',
+            'team',
+            'jorge-castellon-jr',
+            'jarrett-tilford'
+          ] //an array of page slugs to include or exclude, ex. ['about', 'our-team'], default is an empty array
         }
       }
     }
@@ -39,5 +45,12 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
+  },
+  afterBuild ({ redirects }) {
+    for (const rule of redirects) {
+      // rule.from   - The dynamic path
+      // rule.to     - The HTML file path
+      // rule.status - 200 if rewrite rule
+    }
   }
 }

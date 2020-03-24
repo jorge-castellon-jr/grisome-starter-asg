@@ -11,8 +11,10 @@
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="ml-auto ">
-              <b-nav-item to="/" exact-active-class="active">Home</b-nav-item>
+              <b-nav-item to="/" exact-active-class="active">Articles</b-nav-item>
               <b-nav-item to="/about" active-class="active">About</b-nav-item>
+              <b-nav-item to="/our-mission" active-class="active">Our Mission</b-nav-item>
+              <b-nav-item to="/team" active-class="active">Team</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>
