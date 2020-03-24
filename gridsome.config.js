@@ -17,7 +17,7 @@ module.exports = {
     {
       use: '~/src/plugins/wp-source/',
       options: {
-        baseUrl: 'https://thoriumdesign.com/', // required - Replace me with your Wordpress URL 
+        baseUrl: 'https://www.theadvocates.org/', // required - Replace me with your Wordpress URL 
         typeName: 'WordPress', // GraphQL schema name (Optional)
         perPage: 100, // How many posts to load from server per request (Optional)
         concurrent: 10, // How many requests to run simultaneously (Optional)
@@ -29,10 +29,6 @@ module.exports = {
           approach: 'include', // include or exclude, default is include
           list: [
             'about',
-            'our-mission',
-            'team',
-            'jorge-castellon-jr',
-            'jarrett-tilford'
           ] //an array of page slugs to include or exclude, ex. ['about', 'our-team'], default is an empty array
         }
       }
@@ -45,12 +41,5 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-  },
-  afterBuild ({ redirects }) {
-    for (const rule of redirects) {
-      // rule.from   - The dynamic path
-      // rule.to     - The HTML file path
-      // rule.status - 200 if rewrite rule
-    }
   }
 }

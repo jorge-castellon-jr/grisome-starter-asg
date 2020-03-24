@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .read-more {
-  background-image: linear-gradient(100deg, $primary, darken($primary, 10), $primary);
+  background-image: linear-gradient(100deg, $primary, lighten($primary, 10), $primary);
   background-size: 200% auto;
   background-position: 0 0;
   transition: .5s;

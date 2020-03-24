@@ -5,7 +5,7 @@
         <b-navbar class="p-0" toggleable="lg" type="light">
           <b-navbar-brand>
             <b-navbar-brand class="font-family-headings" to="/">
-              <span class="h3 text-dark">Thorium Design</span>
+              <span class="h3 text-dark">Liberator Online</span>
             </b-navbar-brand>
           </b-navbar-brand>
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -46,11 +46,13 @@ export default {
 </script>
 
 <style>
-.fade-enter-active .fade-leave-active {
-  transition: opacity .5s;
+.page-enter-active .page-leave-active {
+  transition: opacity 5s;
+  opacity: 1;
 }
 
-.fade-enter, .fade-leave-to {
+.page-enter, .page-leave-to {
   opacity: 0;
+  transition: opacity 5s;
 }
 </style>

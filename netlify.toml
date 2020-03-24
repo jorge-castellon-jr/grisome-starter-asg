@@ -3,14 +3,4 @@
   command = "gridsome build"
   
 [template.environment]
-  WORDPRESS_URL = "https://thoriumdesign.com/"
-
-[[redirects]]
-  from = "/team/jorge-castellon-jr"
-  to = "/jorge-castellon-jr"
-  status = 301
-
-[[redirects]]
-  from = "/team/jarrett-tilford"
-  to = "/jarrett-tilford"
-  status = 301
+  WORDPRESS_URL = "https://www.theadvocates.org/"
