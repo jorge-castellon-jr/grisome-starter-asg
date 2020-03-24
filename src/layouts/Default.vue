@@ -5,7 +5,7 @@
         <b-navbar class="p-0" toggleable="lg" type="light">
           <b-navbar-brand>
             <b-navbar-brand class="font-family-headings" to="/">
-              <span class="h3 text-dark">Gridsome</span>
+              <span class="h3 text-dark">Thorium Design</span>
             </b-navbar-brand>
           </b-navbar-brand>
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -46,11 +46,11 @@ export default {
 </script>
 
 <style>
-.fade-enter-active {
-  transition: .5s;
+.fade-enter-active .fade-leave-active {
+  transition: opacity .5s;
 }
 
-.fade-enter {
+.fade-enter, .fade-leave-to {
   opacity: 0;
 }
 </style>
