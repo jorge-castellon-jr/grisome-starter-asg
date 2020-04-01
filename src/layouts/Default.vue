@@ -22,6 +22,14 @@
 </template>
 
 <style>
+a, .uk-link {
+  color: #703315;
+}
+
+a:hover, .uk-link:hover {
+  color: #9b471d;
+}
+
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
