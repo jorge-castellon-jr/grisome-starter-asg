@@ -6,14 +6,14 @@
           <strong class="uk-navbar-item uk-logo">
             <g-link to="/">The Advocates</g-link>
           </strong>
-          <ul class="uk-navbar-nav">
+          <!-- <ul class="uk-navbar-nav">
             <li class="uk-active">
               <g-link class="nav__link" to="/">Home</g-link>
             </li>
             <li>
               <g-link class="nav__link" to="/about/">About</g-link>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </nav>
     </header>
